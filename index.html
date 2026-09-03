@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay&Play - Eagle Creek Golf Club</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style-hero.css">
+</head>
+<body>
+
+   <header class="header">
+    <nav class="header__nav container" aria-label="Main Navigation">
+        
+        <!-- Left Side: Logo and Brand Name -->
+        <div class="header__brand">
+            <img src="assets/icons/logo.svg" alt="Stay&Play Logo" class="logo-img" width="40" height="40">
+            <div class="header__logo">Stay&Play</div>
+        </div>
+        
+        <!-- Right Side: Grouped Menu and Actions -->
+        <div class="header__right">
+            
+            <!-- Navigation Links -->
+            <ul class="header__menu">
+                <li><a href="#" class="header__link">HOME</a></li>
+                <li><a href="#" class="header__link">WHERE TO STAY</a></li>
+                <li><a href="#" class="header__link">WHERE TO PLAY</a></li>
+                <li><a href="#" class="header__link">GROUP TRAVEL</a></li>
+            </ul>
+
+            <!-- Actions (Buttons and Search) -->
+            <div class="header__actions">
+                
+                <!-- Extended Actions (Desktop) -->
+                <div class="header__actions-extended">
+                    <button class="button button--primary button--pill">BOOK A TEE TIME</button>
+                    <div class="search-wrapper">
+                        <input type="text" class="search-wrapper__input" placeholder="SEARCH" aria-label="Search">
+                        <svg class="search-wrapper__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Compact Actions (Mobile) -->
+                <div class="header__actions-compact">
+                    <button class="btn-icon btn-icon--solid" aria-label="Book a Tee Time">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="10" r="5"></circle>
+                            <path d="M12 15v5"></path><path d="M9 20h6"></path>
+                        </svg>
+                    </button>
+                    <button class="btn-icon btn-icon--outline" aria-label="Search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <button class="btn-icon btn-icon--menu" aria-label="Open Menu">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+    </nav>
+</header>
+
+    <main class="property-listing">
+    <!-- Header Section -->
+    <header class="listing-header">
+        <nav class="breadcrumbs">
+            <a href="#">Golf Course</a> > <a href="#">Florida</a> > <a href="#">Orlando</a> > <span>Eagle Creek Golf Club</span>
+        </nav>
+        <h1>Eagle Creek Golf Club, Stay and Play</h1>
+        <div class="listing-meta">
+            <div class="rating">
+                <span class="stars">★★★★<span class="half-star">★</span></span>
+                <strong>9.0</strong> <span>(3 REVIEWS)</span>
+            </div>
+            <div class="hours">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                TEE TIMES DAILY 7 AM – 6 PM
+            </div>
+        </div>
+    </header>
+
+    <div class="listing-content">
+        <!-- Left Column: Details -->
+        <div class="main-details">
+            <section class="gallery">
+                <div class="gallery-main">
+                    <img src="assets/images/hero-first.jpeg" alt="Eagle Creek Golf Course Main">
+                </div>
+                <div class="gallery-side gallery-top">
+                    <img src="assets/images/hero-second.jpeg" alt="Eagle Creek Golf Course 2">
+                </div>
+                <div class="gallery-side gallery-bottom">
+                    <img src="assets/images/hero-third.jpeg" alt="Eagle Creek Clubhouse">
+                    <button class="view-images-btn">VIEW ALL 20 IMAGES</button>
+                </div>
+            </section>
+
+            <section class="description">
+                <p>Eagle Creek Golf Club combines scenic views with a championship-level course that offers a memorable golfing experience. Nestled amidst lush landscapes and serene water features, this course is known for its challenging design and exceptional playing conditions, making it a must-play destination for golf enthusiasts. <button class="read-more"><a href="#">READ MORE</a> <span>v</span></button></p>
+            </section>
+
+            <section class="at-a-glance">
+                <div class="glance-title">EAGLE CREEK GOLF<br>CLUB AT A GLANCE</div>
+                <div class="glance-stats">
+                    <div class="stat"><span class="icon">⛳</span> PAR: 72</div>
+                    <div class="stat"><span class="icon">📏</span> TOTAL YARDS: 7305</div>
+                    <div class="stat"><span class="icon">👥</span> PUBLIC COURSE</div>
+                </div>
+                <button class="btn-outline">MORE COURSE HIGHLIGHTS</button>
+            </section>
+        </div>
+
+        <!-- Right Column: Booking Widget -->
+        <aside class="booking-sidebar">
+            <div class="booking-widget">
+                <div class="price-header">
+                    <h2>USD $600 <span>AVG PER NIGHT</span></h2>
+                </div>
+                
+                <form class="booking-form">
+                    <div class="form-row dates">
+                        <div class="input-group">
+                            <label>CHECK-IN</label>
+                            <select><option>19 SEP 2025</option></select>
+                        </div>
+                        <div class="input-group">
+                            <label>CHECK-OUT</label>
+                            <select><option>21 SEP 2025</option></select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group full-width">
+                            <label>GUESTS</label>
+                            <select><option>3 GUESTS, 1 INFANT, 1 PET</option></select>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="availability-status">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#00a651"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    Dates selected are available
+                </div>
+
+                <div class="price-breakdown">
+                    <div class="price-row">
+                        <span>PRICE PER NIGHT</span>
+                        <span>USD $600</span>
+                    </div>
+                    <div class="price-row total">
+                        <span>TOTAL PRICE</span>
+                        <span>USD $600</span>
+                    </div>
+                </div>
+
+                <button class="btn-primary">CHECK AVAILABILITY</button>
+                
+                <div class="redirect-info">
+                    <span class="redirect-text">You will be redirected to</span>
+                    <img src="assets/images/booking-final.png" alt="Booking.com Logo" class="booking-logo" width="100" height="40">
+                    <!-- <strong>Booking.com</strong> -->
+                </div>
+
+                <div class="urgency-banner">
+                    <span class="fire-icon">🔥</span> Hot Deal - It has been viewed 30 times today
+                </div>
+            </div>
+
+            <div class="alternative-box">
+                Not the right fit? Check out our other Top Rated Bach Rentals in <a href="#" >Orlando</a>
+            </div>
+        </aside>
+    </div>
+</main>
+
+    <footer class="footer">
+    <div class="container footer__container">
+        
+        <!-- Left Side: 4-Column Navigation Grid -->
+        <nav class="footer__nav" aria-label="Footer Navigation">
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">HOME</a></li>
+                <li><a href="#" class="footer__link">WHERE TO STAY</a></li>
+                <li><a href="#" class="footer__link">WHERE TO PLAY</a></li>
+                <li><a href="#" class="footer__link">GROUP TRAVEL</a></li>
+                <li><a href="#" class="footer__link">TRAVEL BLOG</a></li>
+                <li><a href="#" class="footer__link">PRIVACY POLICY</a></li>
+                <li><a href="#" class="footer__link">TERMS</a></li>
+                <li><a href="#" class="footer__link">SITEMAP</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">USA</a></li>
+                <li><a href="#" class="footer__link">SCOTLAND</a></li>
+                <li><a href="#" class="footer__link">PORTUGAL</a></li>
+                <li><a href="#" class="footer__link">SPAIN</a></li>
+                <li><a href="#" class="footer__link">IRELAND</a></li>
+                <li><a href="#" class="footer__link">AUSTRALIA</a></li>
+                <li><a href="#" class="footer__link">TURKEY</a></li>
+                <li><a href="#" class="footer__link">SOUTH AFRICA</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">THAILAND</a></li>
+                <li><a href="#" class="footer__link">NEW ZEALAND</a></li>
+                <li><a href="#" class="footer__link">UAE</a></li>
+                <li><a href="#" class="footer__link">CANARY ISLANDS</a></li>
+                <li><a href="#" class="footer__link">MAURITIUS</a></li>
+                <li><a href="#" class="footer__link">BERMUDA</a></li>
+                <li><a href="#" class="footer__link">ARGENTINA</a></li>
+                <li><a href="#" class="footer__link">BARBADOS</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">MEXICO</a></li>
+                <li><a href="#" class="footer__link">CANADA</a></li>
+                <li><a href="#" class="footer__link">CHINA</a></li>
+                <li><a href="#" class="footer__link">FRANCE</a></li>
+                <li><a href="#" class="footer__link">MALAYSIA</a></li>
+                <li><a href="#" class="footer__link">SOUTH KOREA</a></li>
+                <li><a href="#" class="footer__link">JAPAN</a></li>
+                <li><a href="#" class="footer__link">INDONESIA</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right Side: Socials, Dropdowns, and Branding -->
+        <aside class="footer__aside">
+            
+            <div class="footer__socials">
+                <!-- Facebook -->
+                <a href="#" aria-label="Facebook" class="footer__social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <!-- Twitter -->
+                <a href="#" aria-label="Twitter" class="footer__social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <!-- Instagram -->
+                <a href="#" aria-label="Instagram" class="footer__social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+            </div>
+
+            <div class="footer__dropdowns">
+                <div class="footer__select-wrapper">
+                    <select class="footer__select" aria-label="Currency">
+                        <option value="usd">USD</option>
+                    </select>
+                </div>
+                <div class="footer__select-wrapper">
+                    <select class="footer__select" aria-label="Country">
+                        <option value="us">UNITED STATES</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="footer__brand">
+                <div class="footer__brand-logo">
+                    <!-- Placeholder SVG for TravelAI Logo -->
+                     <img src="assets/icons/travelai-logo-icon.svg" alt="TravelAI Logo" width="30px" height="30px">
+                     <img src="assets/images/travelai-name.png" alt="TravelAI Text Logo" width="150px" height="24px">
+                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2z"></path></svg> -->
+                    <!-- <span>TRAVELAI</span> -->
+                </div>
+                <div class="footer__brand-divider"></div>
+                <div class="footer__brand-text">
+                    <strong>Stay&Play</strong>
+                    <span>Powered by TravelAi</span>
+                </div>
+            </div>
+
+            <p class="footer__copyright">&copy; 2025 StayAndPlay. All Rights Reserved</p>
+
+        </aside>
+    </div>
+</footer>
+</body>
+</html>
