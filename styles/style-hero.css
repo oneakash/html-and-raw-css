@@ -13,7 +13,7 @@ body {
     color: var(--text-main);
     line-height: 1.5;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
     background-color: #fff;
 }
 
@@ -22,6 +22,7 @@ body {
 .property-listing {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header */
@@ -273,10 +274,137 @@ h1 {
     color: var(--text-main);
 }
 
+/* =========================================
+   DESKTOP VIEW (Default Grid)
+   ========================================= */
+.gallery-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gallery-track {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.gallery-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Make the first slide take up the left two rows on desktop */
+.gallery-slide:nth-child(1) {
+    grid-row: span 2;
+}
+
+/* Hide images after the 3rd one on desktop so it doesn't break the grid */
+.gallery-slide:nth-child(n+4) {
+    display: none;
+}
+
+.view-images-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: 1px solid white;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Hide dots on desktop */
+.carousel-dots {
+    display: none; 
+}
+
+
+/* =========================================
+   MOBILE & TABLET VIEW (Carousel)
+   ========================================= */
+@media (max-width: 900px) {
+    
+    .gallery-track {
+        /* Change from Grid to Flexbox for horizontal scrolling */
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; /* Enables the snapping effect */
+        scroll-behavior: smooth;
+        gap: 0; /* Remove gap so images touch seamlessly */
+        border-radius: 8px;
+        
+        /* Hide scrollbar for a cleaner look */
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+    }
+    
+    .gallery-track::-webkit-scrollbar { 
+        display: none; 
+    }
+
+    .gallery-slide {
+        flex: 0 0 100%; /* Each slide takes up 100% of the container width */
+        scroll-snap-align: center; /* Snaps the image to the center */
+        height: 250px; /* Adjust height for mobile */
+    }
+
+    /* Show all images in the carousel on mobile */
+    .gallery-slide:nth-child(n+4) {
+        display: block;
+    }
+
+    /* Hide the desktop "View Images" button */
+    .view-images-btn {
+        display: none; 
+    }
+
+    /* Show and style the Carousel Dots */
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .carousel-dots .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid white;
+        background: transparent;
+    }
+
+    .carousel-dots .dot.active {
+        background: white;
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 900px) {
     .listing-content {
         grid-template-columns: 1fr;
+    }
+    /* Hide the booking sidebar on tablets and mobile */
+    .booking-sidebar {
+        display: none;
     }
     .at-a-glance {
         flex-direction: column;
@@ -289,5 +417,113 @@ h1 {
     }
     .gallery-side {
         display: none;
+    }
+}
+
+/* =========================================
+   DESKTOP VIEW (Hidden)
+   ========================================= */
+.mobile-stay-play {
+    display: none; /* Hidden by default on desktop */
+}
+
+/* =========================================
+   MOBILE & TABLET VIEW
+   ========================================= */
+@media (max-width: 900px) {
+    .mobile-stay-play {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .sp-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sp-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+    }
+
+    .stay-color { color: #66c7d6; }
+    .play-color { color: #8bc34a; }
+
+    .sp-box {
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .sp-stats {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+        flex-grow: 1;
+    }
+
+    .sp-stat-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        line-height: 1.2;
+    }
+
+    .stay-stats .sp-stat-item:first-child {
+        border-right: 1px solid var(--border-color);
+    }
+    
+    .play-stats .sp-stat-item:not(:last-child) {
+        border-right: 1px solid var(--border-color);
+    }
+
+    .sp-stat-item strong {
+        font-size: 1.3rem;
+        color: var(--text-main);
+        margin: 2px 0;
+    }
+
+    .sp-stat-item span {
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: var(--text-main);
+    }
+
+    .sp-btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 0.85rem;
+        cursor: pointer;
+        color: var(--text-main);
+    }
+
+    .stay-btn { background-color: #76cdda; }
+    .play-btn { background-color: #9cde95; }
+
+    /* Stack on smaller mobile screens */
+    @media (max-width: 600px) {
+        .mobile-stay-play {
+            grid-template-columns: 1fr;
+        }
     }
 }

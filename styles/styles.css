@@ -39,6 +39,8 @@ body {
     line-height: 1.6;
     color: var(--color-text-main);
     background-color: var(--color-bg-page);
+    margin: 0;      /* Removes default browser spacing */
+    padding: 0;
     -webkit-font-smoothing: antialiased;
 }
 
