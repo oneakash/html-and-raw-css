@@ -13,6 +13,7 @@
     font-family: var(--font-sans);
     color: var(--sp-text-main);
     box-sizing: border-box;
+    display: none;
 }
 
 .stay-play-booking * {
@@ -20,8 +21,9 @@
 }
 
 /* =========================================
-   TABLET & DESKTOP VIEW (Default)
+   TABLET VIEW
    ========================================= */
+   @media (max-width: 1024px) {
 .stay-play-booking {
     display: flex;
     gap: 20px;
@@ -132,6 +134,8 @@
 .play-btn { background-color: #a4e58b; }
 
 .show-mobile { display: none; }
+
+   }
 
 /* =========================================
    MOBILE VIEW

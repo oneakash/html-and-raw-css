@@ -50,21 +50,7 @@
                   placeholder="SEARCH"
                   aria-label="Search"
                 />
-                <svg
-                  class="search-wrapper__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
+                <img class="search-wrapper__icon" src="assets/icons/search.svg" width="16" height="16" alt="Search Icon" />
               </div>
             </div>
 
@@ -74,54 +60,16 @@
                 class="btn-icon btn-icon--solid"
                 aria-label="Book a Tee Time"
               >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="10" r="5"></circle>
-                  <path d="M12 15v5"></path>
-                  <path d="M9 20h6"></path>
-                </svg>
+                <img src="assets/icons/booktee.svg" width="20" height="20" alt="Tee Time Icon" />
               </button>
               <button class="btn-icon btn-icon--outline" aria-label="Search">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
+                <img src="assets/icons/search.svg" width="16" height="16" alt="Search Icon" />
               </button>
             </div>
 
             <!-- Hamburger Menu -->
             <button class="btn-icon btn-icon--menu" aria-label="Open Menu">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
+                <img src="assets/icons/menu.svg" width="28" height="28" alt="Menu Icon" />
             </button>
           </div>
         </div>
@@ -191,6 +139,7 @@
             <article class="sp-card stay-card">
               <div class="sp-header">
                 <div class="sp-icon stay-icon">
+                    <!-- <img src="assets/icons/stay.svg" width="24" height="24" alt="Stay Icon" /> -->
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -294,9 +243,10 @@
               features, this course is known for its challenging design and
               exceptional playing conditions, making it a must-play destination
               for golf enthusiasts.
-              <button class="read-more">
-                <a href="#">READ MORE</a> <span>v</span>
-              </button>
+              <a href="#" class="read-more">
+  READ MORE 
+  <img src="assets/icons/down.svg" width="20" height="20">
+</a>
             </p>
           </section>
 
@@ -312,295 +262,6 @@
               <div class="stat"><span class="icon">👥</span> PUBLIC COURSE</div>
             </div>
             <button class="btn-outline">MORE COURSE HIGHLIGHTS</button>
-          </section>
-
-          <section class="golf-highlights-wrapper" id="course-highlights">
-            <div class="highlights-container">
-              <h2>Eagle Creek Golf Club Highlights</h2>
-
-              <div class="highlights-cards">
-                <article class="hl-card">
-                  <div class="hl-icon" aria-hidden="true">
-                    <svg
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 21V3"></path>
-                      <path d="M5 5l11-2v7l-11 2"></path>
-                      <path d="M5 12h11"></path>
-                    </svg>
-                  </div>
-                  <h3>Course Snapshot</h3>
-                  <div class="hl-card-content">
-                    <p class="text-muted">
-                      Championship course with scenic water features and wide
-                      fairways.
-                    </p>
-                    <ul class="clean-list">
-                      <li>18 holes</li>
-                      <li>Par 72</li>
-                      <li>7,305 yards</li>
-                    </ul>
-                  </div>
-                </article>
-
-                <article class="hl-card">
-                  <div class="hl-icon" aria-hidden="true">
-                    <svg
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M3 21h18"></path>
-                      <path d="M5 21V7l7-4 7 4v14"></path>
-                      <path d="M9 21v-8h6v8"></path>
-                    </svg>
-                  </div>
-                  <h3>Stay Nearby</h3>
-                  <div class="hl-card-content">
-                    <p class="text-muted">
-                      Hand-picked stays close to the club for golf weekends and
-                      group trips.
-                    </p>
-                    <ul class="clean-list">
-                      <li>Resorts and lodges</li>
-                      <li>Shuttle-friendly locations</li>
-                      <li>Family and group options</li>
-                    </ul>
-                  </div>
-                </article>
-
-                <article class="hl-card split-card">
-                  <div class="card-half">
-                    <div class="hl-icon" aria-hidden="true">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.8"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <path d="M12 7v5l3 2"></path>
-                      </svg>
-                    </div>
-                    <h4>Perfect Play Times</h4>
-                    <p class="text-muted mt-half">
-                      Book early morning tee times or take advantage of twilight
-                      rounds.
-                    </p>
-                  </div>
-                  <hr class="card-divider" />
-                  <div class="card-half">
-                    <h4>Popular Rounds</h4>
-                    <ul class="clean-list">
-                      <li>Peak: $100</li>
-                      <li>Off-peak: $75</li>
-                      <li>Twilight: $60</li>
-                    </ul>
-                  </div>
-                </article>
-
-                <article class="hl-card split-card">
-                  <div class="card-half">
-                    <div class="hl-icon" aria-hidden="true">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.8"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M12 2v20"></path>
-                        <path d="M5 7h14"></path>
-                        <path d="M7 7v6a5 5 0 0 0 10 0V7"></path>
-                      </svg>
-                    </div>
-                    <h4>Guest Essentials</h4>
-                    <p class="text-muted mt-half">
-                      Everything you need for a smooth golf trip is close by.
-                    </p>
-                  </div>
-                  <hr class="card-divider" />
-                  <div class="card-half mt-auto">
-                    <ul class="clean-list">
-                      <li>Club storage</li>
-                      <li>On-site dining</li>
-                      <li>Free parking</li>
-                      <li>Practice facilities</li>
-                    </ul>
-                  </div>
-                </article>
-              </div>
-
-              <div class="highlights-features">
-                <div class="feature-item">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="9"></circle>
-                      <path d="M12 7v5l3 2"></path>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Tee Time Windows</h4>
-                    <p>Daily tee times from early morning through sunset.</p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M4 20h16"></path>
-                      <path d="M6 20V8l6-4 6 4v12"></path>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Stay & Play Packages</h4>
-                    <p>Bundle lodging and golf for better trip planning.</p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M3 6h18"></path>
-                      <path d="M6 6v12"></path>
-                      <path d="M18 6v12"></path>
-                      <path d="M6 12h12"></path>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Group Friendly</h4>
-                    <p>
-                      Ideal for golf groups, family trips, and tournament stays.
-                    </p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Trusted Booking</h4>
-                    <p>Clear pricing and availability shown before checkout.</p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M4 6h16"></path>
-                      <path d="M7 6l1 14h8l1-14"></path>
-                      <path d="M10 10v6"></path>
-                      <path d="M14 10v6"></path>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Clubhouse Access</h4>
-                    <p>
-                      Dining and amenities are available without leaving the
-                      resort.
-                    </p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M4 17h16"></path>
-                      <path d="M6 17a2 2 0 1 0 0-4h12a2 2 0 1 1 0 4"></path>
-                      <path d="M8 13V8a4 4 0 0 1 8 0v5"></path>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Easy Arrival</h4>
-                    <p>
-                      Parking and check-in are designed for low-friction
-                      arrivals.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="highlights-special-packages-banner">
-                <strong>Special Packages</strong>
-                <p>
-                  Ask about bundled stay and play offers for longer trips, group
-                  bookings, and seasonal deals.
-                </p>
-              </div>
-            </div>
           </section>
 
           <section class="perfect-stay-section">
@@ -827,9 +488,10 @@
                   </div>
                 </div>
 
+                
                 <!-- Mobile Dots & Button -->
                 <div class="mobile-carousel-controls">
-                  <div class="carousel-dots">
+                  <div class="mobile-carousel-dots">
                     <span class="dot active"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -855,14 +517,220 @@
 
               <!-- Right: Map -->
               <div class="stay-map-wrapper">
-                <img
+                <!-- <img
                   src="assets/images/map1.jpeg"
                   alt="Map of properties"
                   class="map-image"
-                />
+                /> -->
+                <iframe alt="Map of properties"
+                  class="map-image"
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.411389482224!2d-88.71151342347395!3d39.48262431196089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887364aa4e4ae5b5%3A0x40e366c96bafa102!2sEagle%20Creek%20Golf%20Course!5e0!3m2!1sbn!2sbd!4v1788753935262!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</iframe>
+
               </div>
             </div>
           </section>
+
+          <section class="golf-highlights-wrapper" id="course-highlights">
+  <div class="highlights-container">
+    <h2>Eagle Creek Golf Club Highlights</h2>
+
+    <div class="highlights-cards">
+      <!-- Card 1: Par and Difficulty -->
+      <article class="hl-card">
+        <div class="hl-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 22h14"></path>
+            <path d="M9 22V4a2 2 0 0 1 2-2h4l-2 5h5l-7 13"></path>
+          </svg>
+        </div>
+        <h4>Par and Difficulty</h4>
+        <div class="hl-card-content">
+          <p>Par 72 (Front 9: Par 36, Back 9: Par 36)</p>
+          <p>Course Rating: 71.4</p>
+          <p>Course Slope: 113</p>
+          <p class="mt-3">Challenging for experts, enjoyable for intermediates, and welcoming for beginners.</p>
+        </div>
+      </article>
+
+      <!-- Card 2: Yardage -->
+      <article class="hl-card">
+        <div class="hl-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="8" width="20" height="8" rx="2"></rect>
+            <path d="M6 8v4"></path>
+            <path d="M10 8v4"></path>
+            <path d="M14 8v4"></path>
+            <path d="M18 8v4"></path>
+            <circle cx="12" cy="4" r="2"></circle>
+          </svg>
+        </div>
+        <h4>Yardage</h4>
+        <div class="hl-card-content">
+          <p>7,198 yards from the championship tees</p>
+          <p class="mt-3 mb-1">Tee Box Options</p>
+          <ul class="clean-list text-muted">
+            <li>Championship: 7,198 yards</li>
+            <li>Regular: 6,720 yards</li>
+            <li>Forward: 5,942 yards</li>
+            <li>Beginner: 5,152 yards</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Card 3: Split Card -->
+      <article class="hl-card split-card">
+        <div class="card-half">
+          <div class="hl-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h4>Public Course</h4>
+          <p class="text-muted">No stay required</p>
+        </div>
+        <hr class="card-divider" />
+        <div class="card-half">
+          <div class="hl-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="12" width="20" height="8" rx="2"></rect>
+              <path d="M4 12V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4"></path>
+              <circle cx="7" cy="20" r="2"></circle>
+              <circle cx="17" cy="20" r="2"></circle>
+            </svg>
+          </div>
+          <h4>Cart Recommended</h4>
+          <p class="text-muted">Walking allowed</p>
+        </div>
+      </article>
+
+      <!-- Card 4: Course Style -->
+      <article class="hl-card">
+        <div class="hl-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22v-6"></path>
+            <path d="M12 8l-4 8h8z"></path>
+            <path d="M12 2l-6 10h12z"></path>
+            <path d="M18 22v-4"></path>
+            <path d="M18 12l-3 6h6z"></path>
+          </svg>
+        </div>
+        <h4>Course Style</h4>
+        <div class="hl-card-content">
+          <p class="text-muted">Parkland</p>
+          <p class="mt-3 mb-1 text-dark">Notable Features</p>
+          <p class="text-muted">
+            Tree-lined fairways, undulating greens, and strategically placed bunkers. Water hazards come into play on several holes.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Bottom Features Grid -->
+    <div class="highlights-features">
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22l-7-7 7-7 7 7-7 7z"></path>
+            <path d="M12 8v14"></path>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>18-Hole Championship Course</h4>
+          <p>Designed for all skill levels with challenging layouts.</p>
+        </div>
+      </div>
+      
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Tee Time Flexibility</h4>
+          <p>Convenient booking options to suit your schedule.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20"></path>
+            <path d="M2 12h20"></path>
+            <path d="M12 12m-6 0a6 6 0 1 0 12 0 6 6 0 1 0-12 0"></path>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Architect and History</h4>
+          <p>Designed by renowned architect Ron Garl, the course has hosted regional tournaments.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+            <path d="M9 22v-4h6v4"></path>
+            <path d="M8 6h.01"></path>
+            <path d="M16 6h.01"></path>
+            <path d="M12 6h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M16 10h.01"></path>
+            <path d="M16 14h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M8 14h.01"></path>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Luxury Clubhouse</h4>
+          <p>Relax with premium dining, locker rooms, and event spaces.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+            <path d="M9 14h6"></path>
+            <path d="M9 18h6"></path>
+            <path d="M9 10h.01"></path>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Golf Lessons Available</h4>
+          <p>Expert instruction for players of all levels.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </div>
+        <div class="feature-text">
+          <h4>Pro Shop</h4>
+          <p>Fully stocked with top-tier gear, apparel, and accessories.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Out-of-box Special Packages Banner -->
+<div class="highlights-special-packages-banner">
+  <span class="banner-title">SPECIAL PACKAGES</span>
+  <span class="banner-text">Stay & Play packages include two rounds of golf, a cart, and accommodations at a nearby resort starting at $250 per person.</span>
+</div>
           <!-- Guest Reviews Section -->
           <section class="guest-reviews-section">
             <h2>Guest Reviews for Eagle Creek Golf Club</h2>
@@ -981,55 +849,133 @@
 </section>
 
           <section class="weather-section">
-            <h2>
-              When is the Best Time of Year to Play at Eagle Creek Golf Club?
-            </h2>
-            <p class="weather-intro">
-              Fall and spring are the most comfortable seasons for golf here,
-              with mild temperatures and lower humidity.
-            </p>
-            <div class="weather-hero">
-              <div class="weather-hero__left">
-                <span class="weather-hero__day">SUNDAY JAN 19</span>
-                <strong>ORLANDO, FLORIDA</strong>
-              </div>
-              <div class="weather-hero__strip">
-                <span>MON</span><span>TUE</span><span>WED</span><span>THU</span
-                ><span>FRI</span><span>SAT</span><span>SUN</span>
-              </div>
-            </div>
-            <div class="weather-grid">
-              <article class="weather-card">
-                <h3>Spring</h3>
-                <p>
-                  Ideal for golf with blooming flowers, warm days, and light
-                  breezes.
-                </p>
-              </article>
-              <article class="weather-card">
-                <h3>Summer</h3>
-                <p>
-                  Early tee times are best as afternoon heat and storms are more
-                  common.
-                </p>
-              </article>
-              <article class="weather-card">
-                <h3>Fall</h3>
-                <p>
-                  Most comfortable temperatures with consistently good playing
-                  conditions.
-                </p>
-              </article>
-              <article class="weather-card">
-                <h3>Winter</h3>
-                <p>
-                  Cooler and dry conditions make winter a reliable time for golf
-                  trips.
-                </p>
-              </article>
-            </div>
-          </section>
+  <div class="weather-intro-container">
+    <h2>When is the Best Time of Year to Play at Eagle Creek Golf Club?</h2>
+    <p class="weather-intro">
+      Fall and Spring are the best seasons to play at Eagle Creek Golf Club. During these months, the weather is mild with minimal rain, providing perfect golfing conditions. Winter is also a great option for those seeking year-round play in Florida's warmer climate.
+    </p>
+  </div>
 
+  <div class="weather-card-container">
+    <div class="weather-hero">
+      <div class="weather-hero__left">
+        <span class="weather-hero__day">SUNDAY JAN 19</span>
+        <strong class="weather-hero__location">ORLANDO, FLORIDA</strong>
+      </div>
+      
+      <div class="weather-hero__current">
+        <svg class="weather-icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+        <span class="current-temp">24 °C</span>
+      </div>
+
+      <div class="weather-hero__strip">
+        <div class="weather-day">
+          <span class="day-name">MON</span>
+          <svg class="weather-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+          <span class="day-temp">-15.2 °C</span>
+        </div>
+        <div class="weather-day">
+          <span class="day-name">TUE</span>
+          <svg class="weather-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+          <span class="day-temp">-15.2 °C</span>
+        </div>
+        <div class="weather-day">
+          <span class="day-name">WED</span>
+          <svg class="weather-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+          <span class="day-temp">-15.2 °C</span>
+        </div>
+        <div class="weather-day">
+          <span class="day-name">THU</span>
+          <svg class="weather-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+          <span class="day-temp">-15.2 °C</span>
+        </div>
+        <div class="weather-day">
+          <span class="day-name">FRI</span>
+          <svg class="weather-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+          <span class="day-temp">-15.2 °C</span>
+        </div>
+        <div class="weather-day">
+          <span class="day-name">SAT</span>
+          <svg class="weather-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+          <span class="day-temp">-15.2 °C</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="weather-patterns-wrapper">
+      <h3 class="patterns-title">Explore Vancouver's Weather Patterns</h3>
+      <div class="weather-grid">
+        
+        <article class="season-card">
+          <div class="season-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#488c7d" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </div>
+          <h4>Spring (March to May)</h4>
+          <p class="season-desc">Ideal for hiking, with blooming wildflowers and mild temperatures ranging from 60°F to 80°F. This is the most popular season, so booking early is recommended.</p>
+          <hr>
+          <h5>Average Temperature</h5>
+          <p class="season-temps">
+            <span class="temp-day">Daytime: 60°F to 80°F</span>
+            <span class="temp-separator"> - </span>
+            <span class="temp-night">Nighttime: 40°F to 55°F</span>
+          </p>
+        </article>
+
+        <article class="season-card hide-on-mobile">
+          <div class="season-icon">
+             <svg viewBox="0 0 24 24" fill="none" stroke="#488c7d" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </div>
+          <h4>Summer (June to August)</h4>
+          <p class="season-desc">Ideal for hiking, with blooming wildflowers and mild temperatures ranging from 60°F to 80°F. This is the most popular season, so booking early is recommended.</p>
+          <hr>
+          <h5>Average Temperature</h5>
+          <p class="season-temps">
+            <span class="temp-day">Daytime: 60°F to 80°F</span>
+            <span class="temp-separator"> - </span>
+            <span class="temp-night">Nighttime: 40°F to 55°F</span>
+          </p>
+        </article>
+
+        <article class="season-card hide-on-mobile">
+          <div class="season-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#488c7d" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+          </div>
+          <h4>Fall (September to November)</h4>
+          <p class="season-desc">Ideal for hiking, with blooming wildflowers and mild temperatures ranging from 60°F to 80°F. This is the most popular season, so booking early is recommended.</p>
+          <hr>
+          <h5>Average Temperature</h5>
+           <p class="season-temps">
+            <span class="temp-day">Daytime: 60°F to 80°F</span>
+            <span class="temp-separator"> - </span>
+            <span class="temp-night">Nighttime: 40°F to 55°F</span>
+          </p>
+        </article>
+
+        <article class="season-card hide-on-mobile">
+          <div class="season-icon">
+             <svg viewBox="0 0 24 24" fill="none" stroke="#488c7d" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><line x1="12" y1="2" x2="15" y2="5"/><line x1="12" y1="2" x2="9" y2="5"/><line x1="12" y1="22" x2="15" y2="19"/><line x1="12" y1="22" x2="9" y2="19"/><line x1="3" y1="7" x2="21" y2="17"/><line x1="3" y1="7" x2="6" y2="6"/><line x1="3" y1="7" x2="4" y2="10"/><line x1="21" y1="17" x2="18" y2="18"/><line x1="21" y1="17" x2="20" y2="14"/><line x1="3" y1="17" x2="21" y2="7"/><line x1="3" y1="17" x2="6" y2="18"/><line x1="3" y1="17" x2="4" y2="14"/><line x1="21" y1="7" x2="18" y2="6"/><line x1="21" y1="7" x2="20" y2="10"/></svg>
+          </div>
+          <h4>Winter (December to February)</h4>
+          <p class="season-desc">Cooler days and crisp evenings make it perfect for exploring Sedona's trails and enjoying the vibrant autumn colors.</p>
+          <hr style="margin-top: 48px;">
+          <h5>Average Temperature</h5>
+           <p class="season-temps">
+            <span class="temp-day">Daytime: 60°F to 80°F</span>
+            <span class="temp-separator"> - </span>
+            <span class="temp-night">Nighttime: 40°F to 55°F</span>
+          </p>
+        </article>
+      </div>
+
+      <div class="carousel-indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
           <section class="other-courses-section">
             <h2>Other Golf Courses Near Eagle Creek Golf Club</h2>
             <div class="other-courses-grid">

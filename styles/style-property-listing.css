@@ -259,6 +259,7 @@
   .stay-map-wrapper {
     display: none; /* Hide map on mobile */
   }
+  .stay-cards-wrapper
 
   /* Center and size the mobile header */
   .perfect-stay-section h2 {
@@ -347,3 +348,23 @@
     cursor: pointer;
   }
 }
+
+
+  /* Dot indicators */
+  .mobile-carousel-dots {
+    display: flex;
+    gap: 10px;
+  }
+
+  .mobile-carousel-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid #ccc;
+    background: transparent;
+  }
+
+  .mobile-carousel-dots .dot.active {
+    background: #a2e29f; /* Matches the "See Dates" button */
+    border-color: #a2e29f;
+  }

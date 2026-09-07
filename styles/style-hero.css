@@ -134,6 +134,28 @@ h1 {
   font-size: 0.85rem;
   cursor: pointer;
   padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* Space between text and arrow */
+  color: #5a5a5a; /* Dark gray color */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none; /* Removes default browser underline */
+  padding-bottom: 2px; /* Space between text and the custom line */
+  border-bottom: 2px solid #5a5a5a; /* Creates the uniform underline */
+  transition: opacity 0.2s ease;
+}
+
+.read-more:hover {
+  opacity: 0.7; /* Simple hover effect */
+}
+
+.chevron {
+  width: 14px;
+  height: 14px;
+  margin-top: 1px; /* Optically aligns the arrow with the text */
 }
 
 /* At a Glance */
@@ -571,6 +593,318 @@ h1 {
   color: #1d2e24;
 }
 
+/* ---- Base Styling & Typography (Desktop & Tablet) ---- */
+.weather-section {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.weather-intro-container {
+  margin-bottom: 30px;
+}
+
+.weather-intro-container h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #222;
+}
+
+.weather-intro {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 1000px;
+}
+
+.weather-card-container {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Hero Section */
+.weather-hero {
+  background: linear-gradient(to right, #386264, #3a8a77);
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-hero__left {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding-right: 40px;
+}
+
+.weather-hero__day {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.weather-hero__location {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.weather-hero__current {
+  display: none; /* Hidden on Desktop/Tablet */
+}
+
+.weather-hero__strip {
+  display: flex;
+  gap: 30px;
+  padding-left: 10px;
+}
+
+.weather-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.day-name {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.weather-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.day-temp {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Patterns Section */
+.weather-patterns-wrapper {
+  background-color: white;
+  border: 1px solid #d1e3db;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 40px;
+}
+
+.patterns-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.season-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.season-icon {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #488c7d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.season-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.season-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.season-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: auto;
+}
+
+.season-card hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 25px 0 15px 0;
+  width: 100%;
+}
+
+.season-card h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.season-temps {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.temp-separator {
+  display: none; /* Hide dash on desktop */
+}
+
+.temp-night {
+  display: block; /* Stack on desktop */
+}
+
+.carousel-indicators {
+  display: none; /* Hidden on desktop */
+}
+
+
+/* ---- Mobile Overrides (< 768px) ---- */
+@media (max-width: 767px) {
+  .weather-intro-container {
+    display: none; /* Optional: adjust if you want to keep the text intro on mobile */
+  }
+
+  /* Stacked Hero Layout */
+  .weather-hero {
+    flex-direction: column;
+    padding: 35px 20px;
+    background: linear-gradient(to bottom, #386264, #3a8a77);
+  }
+
+  .weather-hero__left {
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .weather-hero__day {
+    font-size: 20px;
+  }
+
+  /* Large Current Temp (Mobile) */
+  .weather-hero__current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+    font-size: 64px;
+    font-weight: 600;
+  }
+
+  .weather-icon-large {
+    width: 72px;
+    height: 72px;
+  }
+
+  .weather-hero__strip {
+    display: none;
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+    overflow-x: hidden;
+    gap: 10px;
+  }
+  
+  .weather-hero__strip .weather-day {
+      min-width: 45px;
+      align-items: center;
+  }
+
+  /* Patterns Container Mobile */
+  .weather-patterns-wrapper {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .patterns-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+  }
+
+  /* Fake the Carousel (Show 1 item, center everything) */
+  .weather-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .season-icon {
+    margin: 0 auto 15px auto;
+  }
+  
+  .season-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .season-card h4 {
+      font-size: 18px;
+  }
+
+  /* Adjust inline temps for mobile */
+  .temp-separator {
+    display: inline;
+  }
+  
+  .temp-night {
+    display: inline;
+  }
+  
+  .season-temps {
+      color: #777;
+  }
+
+  /* Show Carousel dots */
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+  }
+
+  .dot {
+    width: 28px;
+    height: 6px;
+    border-radius: 4px;
+    background: #d4e3dc;
+  }
+
+  .dot.active {
+    background: #4a9181;
+  }
+}
 .course-features-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -639,13 +973,11 @@ h1 {
   letter-spacing: 0.06em;
   opacity: 0.92;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 .weather-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  border: 1px solid #d9e7db;
   border-top: none;
   border-radius: 0 0 8px 8px;
   overflow: hidden;
@@ -738,7 +1070,7 @@ h1 {
 @media (max-width: 768px) {
   .course-features-grid,
   .weather-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .other-courses-grid {
@@ -747,7 +1079,7 @@ h1 {
 
   .weather-hero {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-center;
   }
 
   .other-courses-actions {
