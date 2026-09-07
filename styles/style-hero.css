@@ -1060,6 +1060,203 @@ h1 {
   cursor: pointer;
 }
 
+/* Section & Grid Layout */
+.other-courses-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+.other-courses-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.other-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Card Styling */
+.other-course-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-image-wrapper {
+  height: 200px;
+  width: 100%;
+}
+
+.course-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.other-course-card__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.other-course-card__body h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #111;
+}
+
+/* Icons & Stats Typography */
+.course-distance {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #4a9d77; /* Deep green */
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.course-distance svg {
+  width: 14px;
+  height: 14px;
+}
+
+.course-stats {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #444;
+  font-weight: 500;
+}
+
+.stat-item svg {
+  width: 16px;
+  height: 16px;
+  color: #444;
+}
+
+.card-divider {
+  border: none;
+  border-top: 1px solid #eaeaea;
+  margin: 0 0 16px 0;
+}
+
+.course-notable {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: #4a9d77;
+}
+
+.course-notable svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+
+.course-notable p {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Card Buttons */
+.course-card-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-outline, .btn-solid {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline {
+  background: white;
+  border: 1px solid #111;
+  color: #111;
+}
+
+.btn-solid {
+  background: #9cd683;
+  border: 1px solid #9cd683;
+  color: #111;
+}
+
+/* Bottom Actions Container */
+.other-courses-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  background: white;
+  color: #555;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.pagination-arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.arrow-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #111;
+}
+
+.arrow-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
 @media (max-width: 1024px) {
   .course-features-grid,
   .other-courses-grid {
