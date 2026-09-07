@@ -27,7 +27,7 @@ To view or modify this project locally, follow these simple steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+   git clone https://github.com/oneakash/html-and-raw-css.git
 Open the project:
 Navigate to the project folder and open index.html in any modern web browser.
 
