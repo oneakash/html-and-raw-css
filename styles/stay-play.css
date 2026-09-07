@@ -191,7 +191,7 @@
 
     /* Toggle visibility of specific elements */
     .hide-mobile {
-        display: none !important;
+        display: none;
     }
 
     .show-mobile {

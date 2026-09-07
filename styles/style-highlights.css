@@ -71,11 +71,11 @@
 }
 
 .text-muted {
-  color: #666 !important;
+  color: #666;
 }
 
 .text-dark {
-  color: #222 !important;
+  color: #222;
 }
 
 .mt-3 { margin-top: 16px; }

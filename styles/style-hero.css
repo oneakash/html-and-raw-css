@@ -855,7 +855,7 @@ h1 {
   }
   
   .hide-on-mobile {
-    display: none !important;
+    display: none;
   }
 
   .season-icon {
