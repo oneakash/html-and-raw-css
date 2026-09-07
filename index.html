@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/style-hero.css" />
     <link rel="stylesheet" href="styles/style-property-listing.css" />
+    <link rel="stylesheet" href="styles/style-highlights.css" />
+    <link rel="stylesheet" href="styles/style-guest-review.css" />
+    <link rel="stylesheet" href="styles/stay-play.css" />
   </head>
   <body>
     <header class="header">
@@ -193,64 +196,104 @@
           </section>
 
           <!-- Mobile & Tablet Booking Options (Hidden on Desktop) -->
-          <section class="mobile-stay-play">
-            <!-- Stay Section -->
-            <div class="sp-column">
-              <div class="sp-header stay-color">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#66c7d6">
-                  <circle cx="12" cy="12" r="12" />
-                  <path d="M7 11h10v4H7zM7 9h4v2H7z" fill="#fff" />
-                </svg>
-                <span>STAY</span>
-              </div>
-              <div class="sp-box">
-                <div class="sp-stats stay-stats">
-                  <div class="sp-stat-item">
-                    <strong>800+</strong>
-                    <span>PLACES TO<br />STAY NEAR BY</span>
-                  </div>
-                  <div class="sp-stat-item">
-                    <span>FROM</span>
-                    <strong>$300</strong>
-                  </div>
+          <section class="stay-play-booking">
+            <!-- Stay Card -->
+            <article class="sp-card stay-card">
+              <div class="sp-header">
+                <div class="sp-icon stay-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="11"
+                      fill="#4cbdd6"
+                      stroke="#fff"
+                      stroke-width="2"
+                    />
+                    <path d="M7 11h10v4H7zM7 9h4v2H7z" fill="#fff" />
+                  </svg>
                 </div>
-                <button class="sp-btn stay-btn">BOOK A PLACE TO STAY</button>
+                <h2>STAY</h2>
               </div>
-            </div>
 
-            <!-- Play Section -->
-            <div class="sp-column">
-              <div class="sp-header play-color">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#9bd986">
-                  <circle cx="12" cy="12" r="12" />
-                  <path
-                    d="M12 6a3 3 0 100 6 3 3 0 000-6zm-1 8h2v5h-2z"
-                    fill="#fff"
-                  />
-                </svg>
-                <span>PLAY</span>
-              </div>
-              <div class="sp-box">
-                <div class="sp-stats play-stats">
-                  <div class="sp-stat-item">
-                    <span>PEAK</span>
-                    <strong>$100</strong>
-                    <span>ROUND</span>
+              <div class="sp-body">
+                <div class="sp-stats">
+                  <div class="sp-stat">
+                    <span class="stat-val">800+</span>
+                    <span class="stat-label">PLACES TO<br />STAY NEAR BY</span>
                   </div>
-                  <div class="sp-stat-item">
-                    <span>OFF-PEAK</span>
-                    <strong>$75</strong>
-                    <span>ROUND</span>
-                  </div>
-                  <div class="sp-stat-item">
-                    <span>TWLIGHT</span>
-                    <strong>$60</strong>
-                    <span>ROUND</span>
+
+                  <div class="sp-divider hide-mobile"></div>
+
+                  <div class="sp-stat hide-mobile">
+                    <span class="stat-label">FROM</span>
+                    <span class="stat-val">$300</span>
                   </div>
                 </div>
+
+                <button class="sp-btn stay-btn">
+                  <span class="hide-mobile">BOOK A PLACE TO STAY</span>
+                  <span class="show-mobile">BOOK A STAY</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Play Card -->
+            <article class="sp-card play-card">
+              <div class="sp-header">
+                <div class="sp-icon play-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="11"
+                      fill="#9cd683"
+                      stroke="#fff"
+                      stroke-width="2"
+                    />
+                    <circle cx="12" cy="10" r="4" fill="#fff" />
+                    <path d="M11 14h2v5h-2z" fill="#f5d45e" />
+                  </svg>
+                </div>
+                <h2>PLAY</h2>
+              </div>
+
+              <div class="sp-body">
+                <div class="sp-stats">
+                  <div class="sp-stat">
+                    <span class="stat-label">PEAK</span>
+                    <span class="stat-val">$100</span>
+                    <span class="stat-label">ROUND</span>
+                  </div>
+
+                  <div class="sp-divider hide-mobile"></div>
+
+                  <div class="sp-stat hide-mobile">
+                    <span class="stat-label">OFF-PEAK</span>
+                    <span class="stat-val">$75</span>
+                    <span class="stat-label">ROUND</span>
+                  </div>
+
+                  <div class="sp-divider hide-mobile"></div>
+
+                  <div class="sp-stat hide-mobile">
+                    <span class="stat-label">TWILIGHT</span>
+                    <span class="stat-val">$60</span>
+                    <span class="stat-label">ROUND</span>
+                  </div>
+                </div>
+
                 <button class="sp-btn play-btn">BOOK A TEE TIME</button>
               </div>
-            </div>
+            </article>
           </section>
 
           <section class="description">
@@ -281,6 +324,295 @@
             <button class="btn-outline">MORE COURSE HIGHLIGHTS</button>
           </section>
 
+          <section class="golf-highlights-wrapper" id="course-highlights">
+            <div class="highlights-container">
+              <h2>Eagle Creek Golf Club Highlights</h2>
+
+              <div class="highlights-cards">
+                <article class="hl-card">
+                  <div class="hl-icon" aria-hidden="true">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 21V3"></path>
+                      <path d="M5 5l11-2v7l-11 2"></path>
+                      <path d="M5 12h11"></path>
+                    </svg>
+                  </div>
+                  <h3>Course Snapshot</h3>
+                  <div class="hl-card-content">
+                    <p class="text-muted">
+                      Championship course with scenic water features and wide
+                      fairways.
+                    </p>
+                    <ul class="clean-list">
+                      <li>18 holes</li>
+                      <li>Par 72</li>
+                      <li>7,305 yards</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="hl-card">
+                  <div class="hl-icon" aria-hidden="true">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M3 21h18"></path>
+                      <path d="M5 21V7l7-4 7 4v14"></path>
+                      <path d="M9 21v-8h6v8"></path>
+                    </svg>
+                  </div>
+                  <h3>Stay Nearby</h3>
+                  <div class="hl-card-content">
+                    <p class="text-muted">
+                      Hand-picked stays close to the club for golf weekends and
+                      group trips.
+                    </p>
+                    <ul class="clean-list">
+                      <li>Resorts and lodges</li>
+                      <li>Shuttle-friendly locations</li>
+                      <li>Family and group options</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="hl-card split-card">
+                  <div class="card-half">
+                    <div class="hl-icon" aria-hidden="true">
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M12 7v5l3 2"></path>
+                      </svg>
+                    </div>
+                    <h4>Perfect Play Times</h4>
+                    <p class="text-muted mt-half">
+                      Book early morning tee times or take advantage of twilight
+                      rounds.
+                    </p>
+                  </div>
+                  <hr class="card-divider" />
+                  <div class="card-half">
+                    <h4>Popular Rounds</h4>
+                    <ul class="clean-list">
+                      <li>Peak: $100</li>
+                      <li>Off-peak: $75</li>
+                      <li>Twilight: $60</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="hl-card split-card">
+                  <div class="card-half">
+                    <div class="hl-icon" aria-hidden="true">
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M12 2v20"></path>
+                        <path d="M5 7h14"></path>
+                        <path d="M7 7v6a5 5 0 0 0 10 0V7"></path>
+                      </svg>
+                    </div>
+                    <h4>Guest Essentials</h4>
+                    <p class="text-muted mt-half">
+                      Everything you need for a smooth golf trip is close by.
+                    </p>
+                  </div>
+                  <hr class="card-divider" />
+                  <div class="card-half mt-auto">
+                    <ul class="clean-list">
+                      <li>Club storage</li>
+                      <li>On-site dining</li>
+                      <li>Free parking</li>
+                      <li>Practice facilities</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+
+              <div class="highlights-features">
+                <div class="feature-item">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <path d="M12 7v5l3 2"></path>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Tee Time Windows</h4>
+                    <p>Daily tee times from early morning through sunset.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4 20h16"></path>
+                      <path d="M6 20V8l6-4 6 4v12"></path>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Stay & Play Packages</h4>
+                    <p>Bundle lodging and golf for better trip planning.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M3 6h18"></path>
+                      <path d="M6 6v12"></path>
+                      <path d="M18 6v12"></path>
+                      <path d="M6 12h12"></path>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Group Friendly</h4>
+                    <p>
+                      Ideal for golf groups, family trips, and tournament stays.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Trusted Booking</h4>
+                    <p>Clear pricing and availability shown before checkout.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4 6h16"></path>
+                      <path d="M7 6l1 14h8l1-14"></path>
+                      <path d="M10 10v6"></path>
+                      <path d="M14 10v6"></path>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Clubhouse Access</h4>
+                    <p>
+                      Dining and amenities are available without leaving the
+                      resort.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4 17h16"></path>
+                      <path d="M6 17a2 2 0 1 0 0-4h12a2 2 0 1 1 0 4"></path>
+                      <path d="M8 13V8a4 4 0 0 1 8 0v5"></path>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Easy Arrival</h4>
+                    <p>
+                      Parking and check-in are designed for low-friction
+                      arrivals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="highlights-special-packages-banner">
+                <strong>Special Packages</strong>
+                <p>
+                  Ask about bundled stay and play offers for longer trips, group
+                  bookings, and seasonal deals.
+                </p>
+              </div>
+            </div>
+          </section>
+
           <section class="perfect-stay-section">
             <h2>
               Find the Perfect Stay Near Eagle Creek Golf Club in Orlando, FL
@@ -309,10 +641,7 @@
                   <!-- Card 1 -->
                   <div class="property-card">
                     <div class="pc-image">
-                      <img
-                        src="assets/images/options-1.jpeg"
-                        alt="Resort"
-                      />
+                      <img src="assets/images/options-1.jpeg" alt="Resort" />
                       <div class="pc-badge">50+ GOLF COURSES NEARBY</div>
                       <div class="pc-icons">
                         <span class="icon-circle">🍃</span>
@@ -345,10 +674,7 @@
                   <!-- Card 2 -->
                   <div class="property-card">
                     <div class="pc-image">
-                      <img
-                        src="assets/images/options-2.jpeg"
-                        alt="Lodge"
-                      />
+                      <img src="assets/images/options-2.jpeg" alt="Lodge" />
                       <div class="pc-badge">50+ GOLF COURSES NEARBY</div>
                       <div class="pc-icons">
                         <span class="icon-circle">🍃</span
@@ -381,10 +707,7 @@
                   <!-- Card 3 (Duplicate structure for extra cards as needed) -->
                   <div class="property-card">
                     <div class="pc-image">
-                      <img
-                        src="assets/images/options-3.jpeg"
-                        alt="Retreat"
-                      />
+                      <img src="assets/images/options-3.jpeg" alt="Retreat" />
                       <div class="pc-badge">50+ GOLF COURSES NEARBY</div>
                       <div class="pc-icons">
                         <span class="icon-circle">🍃</span
@@ -407,6 +730,105 @@
                         Pet-Friendly • On-Site Dining Options • Sleeps 8
                       </p>
                       <div class="pc-location">Florida > Orlando</div>
+                      <div class="pc-buttons">
+                        <button class="pc-btn-outline">LEARN MORE</button>
+                        <button class="pc-btn-solid">SEE DATES</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="property-card">
+                    <div class="pc-image">
+                      <img src="assets/images/hero1.jpeg" alt="Course view" />
+                      <div class="pc-badge">50+ GOLF COURSES NEARBY</div>
+                      <div class="pc-icons">
+                        <span class="icon-circle">🍃</span>
+                        <span class="icon-circle">📍</span>
+                        <span class="icon-circle">🤍</span>
+                      </div>
+                    </div>
+                    <div class="pc-info">
+                      <div class="pc-rating">
+                        <span class="star">⭐</span>
+                        <strong>9.8 Superb</strong> | 8 Reviews
+                      </div>
+                      <h3>Edgewater Golf Lodge</h3>
+                      <div class="pc-provider">Booking.com</div>
+                      <div class="pc-price">
+                        From $275 <span class="info-icon">ⓘ</span>
+                      </div>
+                      <p class="pc-amenities">
+                        Lakeside views • Shuttle service • Breakfast included •
+                        Sleeps 6
+                      </p>
+                      <div class="pc-location">Florida &gt; Orlando</div>
+                      <div class="pc-buttons">
+                        <button class="pc-btn-outline">LEARN MORE</button>
+                        <button class="pc-btn-solid">SEE DATES</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 5 -->
+                  <div class="property-card">
+                    <div class="pc-image">
+                      <img src="assets/images/hero2.jpeg" alt="Golf resort" />
+                      <div class="pc-badge">50+ GOLF COURSES NEARBY</div>
+                      <div class="pc-icons">
+                        <span class="icon-circle">🍃</span>
+                        <span class="icon-circle">📍</span>
+                        <span class="icon-circle">🤍</span>
+                      </div>
+                    </div>
+                    <div class="pc-info">
+                      <div class="pc-rating">
+                        <span class="star">⭐</span>
+                        <strong>9.7 Excellent</strong> | 10 Reviews
+                      </div>
+                      <h3>Fairview Lakeside Hotel</h3>
+                      <div class="pc-provider">Booking.com</div>
+                      <div class="pc-price">
+                        From $255 <span class="info-icon">ⓘ</span>
+                      </div>
+                      <p class="pc-amenities">
+                        Golf-cart friendly • Restaurant onsite • Family suites •
+                        Sleeps 8
+                      </p>
+                      <div class="pc-location">Florida &gt; Orlando</div>
+                      <div class="pc-buttons">
+                        <button class="pc-btn-outline">LEARN MORE</button>
+                        <button class="pc-btn-solid">SEE DATES</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 6 -->
+                  <div class="property-card">
+                    <div class="pc-image">
+                      <img src="assets/images/hero-second.jpeg" alt="Retreat" />
+                      <div class="pc-badge">50+ GOLF COURSES NEARBY</div>
+                      <div class="pc-icons">
+                        <span class="icon-circle">🍃</span>
+                        <span class="icon-circle">📍</span>
+                        <span class="icon-circle">🤍</span>
+                      </div>
+                    </div>
+                    <div class="pc-info">
+                      <div class="pc-rating">
+                        <span class="star">⭐</span>
+                        <strong>9.6 Excellent</strong> | 6 Reviews
+                      </div>
+                      <h3>Bunker Bay Retreat</h3>
+                      <div class="pc-provider">Booking.com</div>
+                      <div class="pc-price">
+                        From $235 <span class="info-icon">ⓘ</span>
+                      </div>
+                      <p class="pc-amenities">
+                        Quiet setting • Golf clubhouse access • Dining options •
+                        Sleeps 4
+                      </p>
+                      <div class="pc-location">Florida &gt; Orlando</div>
                       <div class="pc-buttons">
                         <button class="pc-btn-outline">LEARN MORE</button>
                         <button class="pc-btn-solid">SEE DATES</button>
@@ -451,8 +873,212 @@
               </div>
             </div>
           </section>
+          <!-- Guest Reviews Section -->
+          <section class="guest-reviews-section">
+            <h2>Guest Reviews for Eagle Creek Golf Club</h2>
+
+            <div class="reviews-grid">
+              <!-- Review 1 -->
+              <article class="review-card">
+                <div class="review-header">
+                  <span class="review-date">JAN 01 2025</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+                <p class="review-text">
+                  Eagle Creek challenges your strategy and precision, making it
+                  a perfect blend of fun and competitive play.
+                </p>
+                <div class="review-author">
+                  <img
+                    src="assets/images/profile1images.jpeg"
+                    alt="John Smith"
+                    class="author-avatar"
+                  />
+                  <span class="author-name">Golf Pro John Smith</span>
+                </div>
+              </article>
+
+              <!-- Review 2 -->
+              <article class="review-card">
+                <div class="review-header">
+                  <span class="review-date">JAN 01 2025</span>
+                  <span class="review-stars"
+                    >★★★★<span class="star-gray">★</span></span
+                  >
+                </div>
+                <p class="review-text">
+                  Average rating: 4.8/5 stars. Verified golfers praise the
+                  course conditions and excellent service.
+                </p>
+                <div class="review-author">
+                  <img
+                    src="assets/images/profile1images.jpeg"
+                    alt="John Smith"
+                    class="author-avatar"
+                  />
+                  <span class="author-name">Golf Pro John Smith</span>
+                </div>
+              </article>
+
+              <!-- Review 3 -->
+              <article class="review-card">
+                <div class="review-header">
+                  <span class="review-date">JAN 01 2025</span>
+                  <span class="review-stars"
+                    >★★★★<span class="star-gray">★</span></span
+                  >
+                </div>
+                <p class="review-text">
+                  Lorem ipsum odoconse ctetue adi lscinama monuam adipiscing
+                  eleifen hendre himen aeos dictum.
+                </p>
+                <div class="review-author">
+                  <img
+                    src="assets/images/profile1images.jpeg"
+                    alt="John Smith"
+                    class="author-avatar"
+                  />
+                  <span class="author-name">Golf Pro John Smith</span>
+                </div>
+              </article>
+            </div>
+
+            <!-- ADD THIS: Mobile Carousel Dots -->
+            <div class="review-carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </section>
+
+          <section class="course-features-section">
+    <h2>Eagle Creek Course Features</h2>
+    
+    <div class="course-features-grid">
+        <!-- Left Card -->
+        <article class="course-feature-card">
+            <h3>Practice Facilities</h3>
+            <ul>
+                <li>Driving range with target greens</li>
+                <li>Putting green</li>
+                <li>Short game area with sand bunkers</li>
+                <li>Professional lessons available</li>
+            </ul>
+        </article>
+
+        <!-- Right Card -->
+        <article class="course-feature-card">
+            <h3>Amenities and Services</h3>
+            
+            <div class="feature-subsection">
+                <h4>Caddies and Golf Cart Rentals</h4>
+                <ul>
+                    <li>Availability: Golf carts are equipped with GPS and available for rental. Caddie services are available upon request.</li>
+                    <li>Costs: Cart rentals: $25; Caddie fees: $40/hour.</li>
+                </ul>
+            </div>
+            
+            <hr class="feature-divider">
+            
+            <div class="feature-subsection">
+                <h4>On-Course Food and Beverage</h4>
+                <ul>
+                    <li>Multiple snack bars and a halfway house are conveniently located. Beverage carts circulate regularly.</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</section>
+
+          <section class="weather-section">
+            <h2>
+              When is the Best Time of Year to Play at Eagle Creek Golf Club?
+            </h2>
+            <p class="weather-intro">
+              Fall and spring are the most comfortable seasons for golf here,
+              with mild temperatures and lower humidity.
+            </p>
+            <div class="weather-hero">
+              <div class="weather-hero__left">
+                <span class="weather-hero__day">SUNDAY JAN 19</span>
+                <strong>ORLANDO, FLORIDA</strong>
+              </div>
+              <div class="weather-hero__strip">
+                <span>MON</span><span>TUE</span><span>WED</span><span>THU</span
+                ><span>FRI</span><span>SAT</span><span>SUN</span>
+              </div>
+            </div>
+            <div class="weather-grid">
+              <article class="weather-card">
+                <h3>Spring</h3>
+                <p>
+                  Ideal for golf with blooming flowers, warm days, and light
+                  breezes.
+                </p>
+              </article>
+              <article class="weather-card">
+                <h3>Summer</h3>
+                <p>
+                  Early tee times are best as afternoon heat and storms are more
+                  common.
+                </p>
+              </article>
+              <article class="weather-card">
+                <h3>Fall</h3>
+                <p>
+                  Most comfortable temperatures with consistently good playing
+                  conditions.
+                </p>
+              </article>
+              <article class="weather-card">
+                <h3>Winter</h3>
+                <p>
+                  Cooler and dry conditions make winter a reliable time for golf
+                  trips.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="other-courses-section">
+            <h2>Other Golf Courses Near Eagle Creek Golf Club</h2>
+            <div class="other-courses-grid">
+              <article class="other-course-card">
+                <img
+                  src="assets/images/options-1.jpeg"
+                  alt="Providence Golf Club"
+                />
+                <div class="other-course-card__body">
+                  <h3>Providence Golf Club</h3>
+                  <p>6 miles away</p>
+                </div>
+              </article>
+              <article class="other-course-card">
+                <img
+                  src="assets/images/options-2.jpeg"
+                  alt="ChampionsGate Golf Club"
+                />
+                <div class="other-course-card__body">
+                  <h3>ChampionsGate Golf Club</h3>
+                  <p>9 miles away</p>
+                </div>
+              </article>
+              <article class="other-course-card">
+                <img
+                  src="assets/images/options-3.jpeg"
+                  alt="Nicklaus Course at Reunion Resort"
+                />
+                <div class="other-course-card__body">
+                  <h3>Nicklaus Course at Reunion Resort</h3>
+                  <p>12 miles away</p>
+                </div>
+              </article>
+            </div>
+            <div class="other-courses-actions">
+              <button class="other-courses-btn">EXPLORE MORE COURSES</button>
+            </div>
+          </section>
         </div>
-        
 
         <!-- Right Column: Booking Widget -->
         <aside class="booking-sidebar">

@@ -1,529 +1,808 @@
 :root {
-    --text-main: #333;
-    --text-light: #777;
-    --primary-blue: #76cdda;
-    --border-color: #ddd;
-    --bg-light-green: #f2f9f5;
-    --bg-light-blue: #f0f7f9;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --text-main: #333;
+  --text-light: #777;
+  --primary-blue: #76cdda;
+  --border-color: #ddd;
+  --bg-light-green: #f2f9f5;
+  --bg-light-blue: #f0f7f9;
+  --font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
 }
 
 body {
-    font-family: var(--font-family);
-    color: var(--text-main);
-    line-height: 1.5;
-    margin: 0;
-    padding: 0px;
-    background-color: #fff;
+  font-family: var(--font-family);
+  color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0px;
+  background-color: #fff;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .property-listing {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header */
 .breadcrumbs {
-    font-size: 0.8rem;
-    color: var(--text-light);
-    margin-bottom: 8px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
 }
 .breadcrumbs a {
-    color: var(--text-light);
-    text-decoration: none;
+  color: var(--text-light);
+  text-decoration: none;
 }
 h1 {
-    font-size: 1.8rem;
-    margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
 }
 .listing-meta {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 0.85rem;
-    margin-bottom: 20px;
-    color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  color: var(--text-light);
 }
 .rating {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.stars { color: #2ecc71; letter-spacing: 2px;}
-.half-star { color: #a5d6a7; }
-.rating strong { color: var(--text-main); }
+.stars {
+  color: #2ecc71;
+  letter-spacing: 2px;
+}
+.half-star {
+  color: #a5d6a7;
+}
+.rating strong {
+  color: var(--text-main);
+}
 .hours {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 /* Layout */
 .listing-content {
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 25px;
 }
 
 /* Gallery */
 .gallery {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 200px 200px;
-    gap: 4px;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 4px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 .gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .gallery-main {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 .gallery-bottom {
-    position: relative;
+  position: relative;
 }
 .view-images-btn {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: 1px solid white;
-    padding: 6px 12px;
-    font-size: 0.75rem;
-    border-radius: 20px;
-    cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 /* Description */
 .description p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 .read-more {
-    background: none;
-    border: none;
-    font-weight: bold;
-    font-size: 0.85rem;
-    cursor: pointer;
-    padding: 0;
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0;
 }
 
 /* At a Glance */
 .at-a-glance {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--bg-light-green);
-    padding: 20px;
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-light-green);
+  padding: 20px;
+  border-radius: 8px;
 }
 .glance-title {
-    font-weight: bold;
-    font-size: 0.9rem;
-    line-height: 1.2;
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 1.2;
 }
 .glance-stats {
-    display: flex;
-    gap: 20px;
-    font-size: 0.85rem;
+  display: flex;
+  gap: 20px;
+  font-size: 0.85rem;
 }
 .stat {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 .btn-outline {
-    background: transparent;
-    border: 1px solid var(--text-main);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--text-main);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* Booking Sidebar */
 .booking-widget {
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 .price-header h2 {
-    margin: 0 0 20px 0;
-    font-size: 1.5rem;
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
 }
 .price-header span {
-    font-size: 0.75rem;
-    color: var(--text-light);
-    font-weight: normal;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: normal;
 }
 .booking-form .form-row {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 .input-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    padding: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 8px;
 }
-.input-group.full-width { width: 100%; }
+.input-group.full-width {
+  width: 100%;
+}
 .input-group label {
-    font-size: 0.65rem;
-    color: var(--text-light);
-    font-weight: bold;
+  font-size: 0.65rem;
+  color: var(--text-light);
+  font-weight: bold;
 }
 .input-group select {
-    border: none;
-    outline: none;
-    font-size: 0.9rem;
-    background: transparent;
-    appearance: none;
-    font-weight: 500;
-    margin-top: 4px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background: transparent;
+  appearance: none;
+  font-weight: 500;
+  margin-top: 4px;
 }
 .availability-status {
-    background-color: var(--bg-light-green);
-    color: #2e7d32;
-    padding: 12px;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 15px 0;
+  background-color: var(--bg-light-green);
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 0;
 }
 .price-breakdown {
-    margin: 20px 0;
-    font-size: 0.9rem;
+  margin: 20px 0;
+  font-size: 0.9rem;
 }
 .price-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--text-light);
 }
 .price-row.total {
-    font-weight: bold;
-    color: var(--text-main);
-    border-top: 1px solid var(--border-color);
-    padding-top: 10px;
+  font-weight: bold;
+  color: var(--text-main);
+  border-top: 1px solid var(--border-color);
+  padding-top: 10px;
 }
 .btn-primary {
-    width: 100%;
-    background-color: var(--primary-blue);
-    color: white;
-    border: none;
-    padding: 14px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-bottom: 15px;
+  width: 100%;
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 15px;
 }
 .redirect-info {
-    color: var(--text-light);
-    display: flex;
-    align-items: center;
-    gap: 6px; 
-    justify-content: center;
-} 
-
- .redirect-text {
-    font-size: 0.8rem;
-    margin: 0 0 8px 0;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
 }
 
+.redirect-text {
+  font-size: 0.8rem;
+  margin: 0 0 8px 0;
+}
 
 .urgency-banner {
-    background-color: #f8f9fa;
-    padding: 12px;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+  background-color: #f8f9fa;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 /* Alternative Box */
 .alternative-box {
-    background-color: var(--bg-light-blue);
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 0.85rem;
-    margin-top: 20px;
+  background-color: var(--bg-light-blue);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 20px;
 }
 .alternative-box a {
-    color: var(--text-main);
+  color: var(--text-main);
 }
 
 /* =========================================
    DESKTOP VIEW (Default Grid)
    ========================================= */
 .gallery-container {
-    position: relative;
-    margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .gallery-track {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 200px 200px;
-    gap: 4px;
-    border-radius: 12px;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 4px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .gallery-slide {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Make the first slide take up the left two rows on desktop */
 .gallery-slide:nth-child(1) {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 
 /* Hide images after the 3rd one on desktop so it doesn't break the grid */
-.gallery-slide:nth-child(n+4) {
-    display: none;
+.gallery-slide:nth-child(n + 4) {
+  display: none;
 }
 
 .view-images-btn {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: 1px solid white;
-    padding: 6px 12px;
-    font-size: 0.75rem;
-    border-radius: 20px;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 /* Hide dots on desktop */
 .carousel-dots {
-    display: none; 
+  display: none;
 }
-
 
 /* =========================================
    MOBILE & TABLET VIEW (Carousel)
    ========================================= */
 @media (max-width: 900px) {
-    
-    .gallery-track {
-        /* Change from Grid to Flexbox for horizontal scrolling */
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory; /* Enables the snapping effect */
-        scroll-behavior: smooth;
-        gap: 0; /* Remove gap so images touch seamlessly */
-        border-radius: 8px;
-        
-        /* Hide scrollbar for a cleaner look */
-        -ms-overflow-style: none;  
-        scrollbar-width: none;  
-    }
-    
-    .gallery-track::-webkit-scrollbar { 
-        display: none; 
-    }
+  .gallery-track {
+    /* Change from Grid to Flexbox for horizontal scrolling */
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Enables the snapping effect */
+    scroll-behavior: smooth;
+    gap: 0; /* Remove gap so images touch seamlessly */
+    border-radius: 8px;
 
-    .gallery-slide {
-        flex: 0 0 100%; /* Each slide takes up 100% of the container width */
-        scroll-snap-align: center; /* Snaps the image to the center */
-        height: 250px; /* Adjust height for mobile */
-    }
+    /* Hide scrollbar for a cleaner look */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 
-    /* Show all images in the carousel on mobile */
-    .gallery-slide:nth-child(n+4) {
-        display: block;
-    }
+  .gallery-track::-webkit-scrollbar {
+    display: none;
+  }
 
-    /* Hide the desktop "View Images" button */
-    .view-images-btn {
-        display: none; 
-    }
+  .gallery-slide {
+    flex: 0 0 100%; /* Each slide takes up 100% of the container width */
+    scroll-snap-align: center; /* Snaps the image to the center */
+    height: 250px; /* Adjust height for mobile */
+  }
 
-    /* Show and style the Carousel Dots */
-    .carousel-dots {
-        display: flex;
-        justify-content: center;
-        gap: 6px;
-        position: absolute;
-        bottom: 15px;
-        left: 0;
-        right: 0;
-        z-index: 10;
-    }
+  /* Show all images in the carousel on mobile */
+  .gallery-slide:nth-child(n + 4) {
+    display: block;
+  }
 
-    .carousel-dots .dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        border: 1px solid white;
-        background: transparent;
-    }
+  /* Hide the desktop "View Images" button */
+  .view-images-btn {
+    display: none;
+  }
 
-    .carousel-dots .dot.active {
-        background: white;
-    }
+  /* Show and style the Carousel Dots */
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .carousel-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: transparent;
+  }
+
+  .carousel-dots .dot.active {
+    background: white;
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-    .listing-content {
-        grid-template-columns: 1fr;
-    }
-    /* Hide the booking sidebar on tablets and mobile */
-    .booking-sidebar {
-        display: none;
-    }
-    .at-a-glance {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-    .gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .gallery-side {
-        display: none;
-    }
+  .listing-content {
+    grid-template-columns: 1fr;
+  }
+  /* Hide the booking sidebar on tablets and mobile */
+  .booking-sidebar {
+    display: none;
+  }
+  .at-a-glance {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .gallery-side {
+    display: none;
+  }
 }
 
 /* =========================================
    DESKTOP VIEW (Hidden)
    ========================================= */
 .mobile-stay-play {
-    display: none; /* Hidden by default on desktop */
+  display: none; /* Hidden by default on desktop */
 }
 
 /* =========================================
    MOBILE & TABLET VIEW
    ========================================= */
 @media (max-width: 900px) {
+  .mobile-stay-play {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .sp-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sp-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+  }
+
+  .stay-color {
+    color: #66c7d6;
+  }
+  .play-color {
+    color: #8bc34a;
+  }
+
+  .sp-box {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .sp-stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    flex-grow: 1;
+  }
+
+  .sp-stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    line-height: 1.2;
+  }
+
+  .stay-stats .sp-stat-item:first-child {
+    border-right: 1px solid var(--border-color);
+  }
+
+  .play-stats .sp-stat-item:not(:last-child) {
+    border-right: 1px solid var(--border-color);
+  }
+
+  .sp-stat-item strong {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    margin: 2px 0;
+  }
+
+  .sp-stat-item span {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: var(--text-main);
+  }
+
+  .sp-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--text-main);
+  }
+
+  .stay-btn {
+    background-color: #76cdda;
+  }
+  .play-btn {
+    background-color: #9cde95;
+  }
+
+  /* Stack on smaller mobile screens */
+  @media (max-width: 600px) {
     .mobile-stay-play {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 25px;
+      grid-template-columns: 1fr;
     }
+  }
+}
 
-    .sp-column {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+/* =========================================
+   Desktop Reference Sections
+   ========================================= */
+.course-features-section,
+.weather-section,
+.other-courses-section {
+  max-width: 1100px;
+  margin: 34px auto 0;
+}
 
-    .sp-header {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 1.8rem;
-        font-weight: 300;
-        letter-spacing: -0.5px;
-    }
+.course-features-section h2,
+.weather-section h2,
+.other-courses-section h2 {
+  font-size: 1.35rem;
+  margin: 0 0 16px 0;
+  color: #1d2e24;
+}
 
-    .stay-color { color: #66c7d6; }
-    .play-color { color: #8bc34a; }
+.course-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
 
-    .sp-box {
-        border: 1px solid var(--border-color);
-        border-radius: 4px;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
+.course-feature-card {
+  background: #edf8ee;
+  border: 1px solid #d9e7db;
+  border-radius: 8px;
+  padding: 18px 18px 16px;
+}
 
-    .sp-stats {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 15px;
-        flex-grow: 1;
-    }
+.course-feature-card h3 {
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+  color: #1d2e24;
+}
 
-    .sp-stat-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex: 1;
-        line-height: 1.2;
-    }
+.course-feature-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #43564a;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
 
-    .stay-stats .sp-stat-item:first-child {
-        border-right: 1px solid var(--border-color);
-    }
-    
-    .play-stats .sp-stat-item:not(:last-child) {
-        border-right: 1px solid var(--border-color);
-    }
+.weather-intro {
+  margin: 0 0 16px 0;
+  font-size: 0.92rem;
+  color: #5f6f65;
+}
 
-    .sp-stat-item strong {
-        font-size: 1.3rem;
-        color: var(--text-main);
-        margin: 2px 0;
-    }
+.weather-hero {
+  background: linear-gradient(90deg, #2e7d6d, #4b9a8b);
+  color: #ffffff;
+  border-radius: 8px 8px 0 0;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
 
-    .sp-stat-item span {
-        font-size: 0.6rem;
-        font-weight: bold;
-        color: var(--text-main);
-    }
+.weather-hero__left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 
-    .sp-btn {
-        width: 100%;
-        padding: 12px;
-        border: none;
-        border-radius: 4px;
-        font-weight: bold;
-        font-size: 0.85rem;
-        cursor: pointer;
-        color: var(--text-main);
-    }
+.weather-hero__day {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
 
-    .stay-btn { background-color: #76cdda; }
-    .play-btn { background-color: #9cde95; }
+.weather-hero__left strong {
+  font-size: 1rem;
+  font-weight: 700;
+}
 
-    /* Stack on smaller mobile screens */
-    @media (max-width: 600px) {
-        .mobile-stay-play {
-            grid-template-columns: 1fr;
-        }
-    }
+.weather-hero__strip {
+  display: flex;
+  gap: 16px;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  opacity: 0.92;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid #d9e7db;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.weather-card {
+  background: #ffffff;
+  padding: 18px 16px 20px;
+  border-right: 1px solid #e8eee9;
+}
+
+.weather-card:last-child {
+  border-right: none;
+}
+
+.weather-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: #1d2e24;
+}
+
+.weather-card p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: #5f6f65;
+  line-height: 1.45;
+}
+
+.other-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.other-course-card {
+  background: #ffffff;
+  border: 1px solid #dfe7e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.other-course-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.other-course-card__body {
+  padding: 14px 14px 16px;
+}
+
+.other-course-card__body h3 {
+  margin: 0 0 4px 0;
+  font-size: 0.98rem;
+  color: #1d2e24;
+}
+
+.other-course-card__body p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #5f6f65;
+}
+
+.other-courses-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.other-courses-btn {
+  border: 1px solid #b7c2bb;
+  background: transparent;
+  color: #5f6f65;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .course-features-grid,
+  .other-courses-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-features-grid,
+  .weather-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .other-courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .other-courses-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 599px) {
+  .course-features-section,
+  .weather-section,
+  .other-courses-section {
+    margin-top: 24px;
+  }
+
+  .course-features-section h2,
+  .weather-section h2,
+  .other-courses-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .course-features-grid,
+  .weather-grid,
+  .highlights-cards,
+  .highlights-features,
+  .other-courses-grid,
+  .reviews-grid,
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-feature-card,
+  .weather-card,
+  .other-course-card__body,
+  .hl-card,
+  .review-card,
+  .property-card {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .weather-hero,
+  .highlights-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .weather-grid {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .weather-card,
+  .other-course-card {
+    border-right: none;
+  }
+}
+
+/* =========================================
+   Hide Other Courses Section on Tablet & Mobile
+   ========================================= */
+@media (max-width: 1024px) {
+  .other-courses-section {
+    display: none;
+  }
 }

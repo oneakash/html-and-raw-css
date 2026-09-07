@@ -1,0 +1,186 @@
+.golf-highlights-wrapper {
+  font-family: var(--font-sans, var(--font-family));
+  color: var(--text-primary, #1a2b22);
+  max-width: 1100px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* =========================================
+   Main Green Container
+   ========================================= */
+.highlights-container {
+  background-color: var(--bg-light-green, #f3f9f4);
+  border: 1px solid var(--border-card, #e5ebe6);
+  border-radius: 8px;
+  padding: 28px 26px 22px;
+  margin-bottom: 18px;
+}
+
+.highlights-container h2 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 0 0 22px 0;
+  color: #2c3e32;
+}
+
+/* =========================================
+   Top Grid: Cards
+   ========================================= */
+.highlights-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.hl-card {
+  background: #ffffff;
+  border: 1px solid var(--border-card, #e5ebe6);
+  border-radius: 8px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.hl-icon {
+  color: var(--text-primary, #1a2b22);
+  margin-bottom: 15px;
+}
+
+.hl-card h3,
+.hl-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.hl-card-content p {
+  font-size: 0.9rem;
+  margin: 0 0 8px 0;
+}
+
+.clean-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.clean-list li {
+  margin-bottom: 4px;
+}
+
+.text-muted {
+  color: var(--text-secondary, #5e6b63);
+}
+
+.mt-auto {
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.mt-half {
+  margin-top: 20px;
+}
+
+/* Split Cards (Cards 3 & 4) */
+.split-card .card-half {
+  display: flex;
+  flex-direction: column;
+}
+
+.split-card .card-half:not(:first-child) {
+  margin-top: 25px;
+}
+
+.card-divider {
+  border: 0;
+  border-top: 1px solid var(--border-card, #e5ebe6);
+  margin: 20px 0;
+}
+
+/* =========================================
+   Middle Grid: Features
+   ========================================= */
+.highlights-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 20px;
+  border-top: 1px solid #dce8df;
+  padding-top: 22px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.feature-icon svg {
+  color: var(--text-primary, #1a2b22);
+  flex-shrink: 0;
+}
+
+.feature-text h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.feature-text p {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #5e6b63);
+  margin: 0;
+}
+
+/* =========================================
+   Bottom Banner
+   ========================================= */
+.highlights-special-packages-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--border-card, #ddd);
+  font-size: 0.95rem;
+}
+
+.highlights-special-packages-banner strong {
+  white-space: nowrap;
+  color: var(--text-primary, #333);
+}
+
+.highlights-special-packages-banner p {
+  margin: 0;
+  color: var(--text-primary, #444);
+}
+
+/* =========================================
+   Responsive Adjustments
+   ========================================= */
+@media (max-width: 1024px) {
+  .highlights-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .highlights-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .highlights-special-packages-banner {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .highlights-container {
+    padding: 25px 15px;
+  }
+  .highlights-cards {
+    grid-template-columns: 1fr;
+  }
+  .highlights-features {
+    grid-template-columns: 1fr;
+  }
+}
